@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+  jenkins:    
+    image: jenkins/jenkins:2.375
+    container_name: master
+    restart: always
+    ports:
+      - 8080:8080
+      - 50000:50000
+    environment:
+      TZ: America/Sao_Paulo
+    volumes:
+      - jenkins_home:/var/jenkins_home
+volumes:
+  jenkins_home:
+    driver: local
