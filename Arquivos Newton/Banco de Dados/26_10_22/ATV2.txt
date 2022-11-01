@@ -1,0 +1,30 @@
+alter table cargo add primary key(cod_cargo);
+
+alter table formacao_escolar add primary key (cod_formacao);
+
+alter table projeto add primary key (cod_projeto);
+
+alter table funcionario add constraint
+FK_Cargo_Funcionario
+foreign key (cod_Cargo) references cargo (cod_cargo);
+
+INSERT INTO cargo (cod_cargo, 
+Nom_Cargo,Val_Salario_Base) 
+VALUES (1,'Professor', 30000);
+
+ALTER TABLE funcionario ADD 
+Num_Telefone char(15) null;
+
+ALTER TABLE funcionario MODIFY COLUMN 
+Num_Telefone varchar(20) null;
+
+ALTER TABLE funcionario DROP COLUMN 
+Num_Telefone;
+
+alter table funcionario add constraint 
+FK_Cargo_Funcionario 
+foreign key (cod_Cargo) references cargo 
+(cod_cargo);
+
+ALTER TABLE funcionario DROP constraint 
+FK_Cargo_Funcionario;

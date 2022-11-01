@@ -1,0 +1,8 @@
+Newton Car
+
+Um aplicativo onde o usuário poderá encontrar ou oferecer uma carona, 
+compartilhar um uber ou até arrumar amigos para ter companhia na hora de ir embora de ônibus.
+
+O usuário abre uma solicitação informando (Endereço de Partida e Destino) e outro usuário pode 
+aceitar essa solicitação se seu destino e localização atual coincidirem. E após esse Match ocorrer,
+o sistema cria um grupo para que esse usuário(s) consigam se comunicar e definir os parâmetros desse encontro. 
